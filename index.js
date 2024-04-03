@@ -57,7 +57,7 @@ mongoose.connect(mongoUrl)
   });
 
 app.use(express.json());
-app.use("/api", userRoutes);
+app.use("/", userRoutes);
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
